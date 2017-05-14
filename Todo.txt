@@ -1,0 +1,52 @@
+스티리밍 상태 조사 (acitve인가?
+https://www.googleapis.com/youtube/v3/liveStreams?part=id%2Cstatus&id=N4Y9d5LmD_LnPaUPJWySug1494767329544181
+{
+ "kind": "youtube#liveStreamListResponse",
+ "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/QBKY2trh5OLqjCCCOMHL-0mKYM0\"",
+ "pageInfo": {
+  "totalResults": 0,
+  "resultsPerPage": 5
+ },
+ "items": [
+  {
+
+
+   "kind": "youtube#liveStream",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/jcn8K8ZuiJu0mvRo8Hy9kI8hwZ0\"",
+   "id": "N4Y9d5LmD_LnPaUPJWySug1494767329544181",
+   "status": {
+    "streamStatus": "active",
+    "healthStatus": {
+     "status": "good"
+    }
+   }
+  }
+ ]
+}
+브로드캐스트 transition -> testing
+https://www.googleapis.com/youtube/v3/liveBroadcasts/transition?broadcastStatus=testing&id=pH3sML6Tyb0&part=id%2Cstatus
+브로드캐스트 상태 조차
+https://www.googleapis.com/youtube/v3/liveBroadcasts?part=id%2Cstatus&id=pH3sML6Tyb0
+
+{
+ "kind": "youtube#liveBroadcastListResponse",
+ "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/AHituvBXxzp0v_eHvARX8rjtMbg\"",
+ "pageInfo": {
+  "totalResults": 0,
+  "resultsPerPage": 5
+ },
+ "items": [
+  {
+
+
+   "kind": "youtube#liveBroadcast",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/2kfMod49Mf1zCxXURJGhikdX0Hk\"",
+   "id": "pH3sML6Tyb0",
+   "status": {
+    "lifeCycleStatus": "live",
+    "privacyStatus": "private",
+    "recordingStatus": "recording"
+   }
+  }
+ ]
+}
